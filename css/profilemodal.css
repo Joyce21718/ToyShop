@@ -1,0 +1,75 @@
+
+    .nav-profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .profile-modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-modal-content {
+        background: hsl(0, 0%, 99%);
+        padding: 25px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+        color: black;
+    }
+    .close-profile {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .profile-preview {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 15px 0;
+        border: 2px solid #444;
+    }
+    #saveProfileBtn {
+        margin-top: 15px;
+        padding: 10px;
+        width: 100%;
+        background: #ff9800;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .profile-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    #saveProfileBtn {
+        flex: 1;
+        background: #ff9800;
+        color: #000;
+    }
+
+    #cancelProfileBtn {
+        margin-top: 15px;
+        padding: 10px;
+        width: 50%;
+        background: #ff9800;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    #cancelProfileBtn:hover {
+        background: #444;
+    }

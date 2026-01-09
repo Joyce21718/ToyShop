@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyShop Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-page" data-aos="zoom-in">
+        <div class="login-left">
+            <img src="../img/shop.jpg" alt="ToyShop" />
+
+        </div>
+        <div class="login-right">
+            <h2>Login to ToyShop</h2>
+            <form id="loginForm">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <div class="login-actions">
+                    <input type="checkbox" id="showPassword">
+                    <label for="showPassword">Show Password</label>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+                <p class="signup-text">Don't have an account? <a href="shopnow.html">Register here</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, easing: "ease-in-out", once: false, mirror: true });
+
+    </script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

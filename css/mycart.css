@@ -1,0 +1,119 @@
+
+.orders-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 10px;
+    scroll-behavior: smooth;
+}
+
+.orders-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.orders-grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.orders-grid::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.orders-grid::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+.order-card {
+    flex: 0 0 260px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.order-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.order-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.order-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.order-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.order-actions {
+    margin-top: 12px;
+}
+
+.delete-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #ef5350, #e53935);
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(229, 57, 53, 0.4);
+}
+
+.delete-btn:hover {
+    background: linear-gradient(135deg, #e53935, #c62828);
+    box-shadow: 0 6px 12px rgba(229, 57, 53, 0.5);
+    transform: translateY(-2px);
+}
+.no-orders {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    margin-top: 50px;
+}
+@media (max-width: 1024px) {
+    .order-card {
+        flex: 0 0 220px;
+    }
+
+    .order-card img {
+        height: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .orders-grid {
+        gap: 15px;
+    }
+
+    .order-card {
+        flex: 0 0 180px;
+    }
+
+    .order-card img {
+        height: 120px;
+    }
+}

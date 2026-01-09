@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToyShop Online</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/toys.css" />
+  <link rel="stylesheet" href="css/categories.css" />
+  <link rel="stylesheet" href="css/deals.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<style>
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+</style>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">ToyShop</div>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#toys">Toys</a></li>
+      <li><a href="#deals">Deals</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="page/login.html">Login</a></li>
+
+      <li class="desktop-search">
+        <form class="search-form">
+          <input type="text" placeholder="Search toys..." />
+          <button class="cta-btn">Search</button>
+        </form>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- HOME HERO -->
+  <section class="home">
+    <div class="home-content" data-aos="fade-up">
+      <h1>Welcome to ToyShop Online!</h1>
+      <p>Discover the best toys for kids of all ages. Fun, safe, and delivered to your doorstep.</p>
+      <a href="page/shopnow.html" class="cta-btn">Shop Now</a>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="about-container">
+
+      <!-- TEXT -->
+      <div class="about-text" data-aos="fade-right">
+        <h2 class="section-title">About ToyShop</h2>
+
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Where fun, imagination, and quality toys come together
+        </p>
+
+        <p data-aos="fade-up" data-aos-delay="200">
+          <strong>ToyShop</strong> is your trusted online destination for premium toys,
+          action figures, and collectibles. From exciting
+          <span>Transformers</span> to educational playsets, we bring happiness to
+          kids and collectors alike.
+        </p>
+
+        <p data-aos="fade-up" data-aos-delay="300">
+          We focus on <span>safe materials</span>, <span>affordable prices</span>,
+          and <span>exclusive deals</span> so every shopping experience is fun,
+          secure, and memorable.
+        </p>
+
+        <p class="about-highlight" data-aos="zoom-in" data-aos-delay="400">
+          Play more. Imagine more. Enjoy more.
+        </p>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="about-image" data-aos="fade-left" data-aos-delay="200">
+        <img src="img/about.png" alt="Toy Collection">
+      </div>
+
+    </div>
+  </section>
+
+  <section class="categories" id="categories">
+    <h2 class="section-title">Shop by Category</h2>
+    <p class="section-subtitle">Find toys that your kids will love!</p>
+
+    <div class="category-grid">
+      <div class="category-card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Cars & Vehicles</h3>
+        <p>Racing cars, trucks, and fun vehicles!</p>
+        <a href="#" class="cta-btn">Explore</a>
+      </div>
+      <div class="category-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Dolls & Figures</h3>
+        <p>Princess dolls, action figures, and collectibles.</p>
+        <a href="page/shopnow.html" class="cta-btn">Explore</a>
+      </div>
+      <div class="category-card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Building & Blocks</h3>
+        <p>LEGO, building blocks, and creative construction toys.</p>
+        <a href="page/shopnow.html" class="cta-btn">Explore</a>
+      </div>
+      <div class="category-card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Transformers</h3>
+        <p>Autobots and Decepticons for epic battles!</p>
+        <a href="page/shopnow.html" class="cta-btn">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEALS SECTION -->
+  <section class="deals" id="deals">
+    <h2 class="section-title">Hot Deals</h2>
+    <p class="section-subtitle">Grab these toys at amazing prices!</p>
+
+    <div class="deal-grid">
+      <div class="deal-card" data-aos="flip-left" data-aos-delay="100">
+        <h3>Racing Car</h3>
+        <p class="original-price">₱699</p>
+        <p class="deal-price">₱499</p>
+        <a href="page/shopnow.html" class="cta-btn">Buy Now</a>
+      </div>
+      <div class="deal-card" data-aos="flip-left" data-aos-delay="200">
+        <h3>Princess Doll</h3>
+        <p class="original-price">₱899</p>
+        <p class="deal-price">₱699</p>
+        <a href="page/shopnow.html" class="cta-btn">Buy Now</a>
+      </div>
+      <div class="deal-card" data-aos="flip-left" data-aos-delay="300">
+        <h3>Bumblebee Transformer</h3>
+        <p class="original-price">₱1,199</p>
+        <p class="deal-price">₱999</p>
+        <a href="page/shopnow.html" class="cta-btn">Buy Now</a>
+      </div>
+      <div class="deal-card" data-aos="flip-left" data-aos-delay="400">
+        <h3>Megatron Figure</h3>
+        <p class="original-price">₱1,500</p>
+        <p class="deal-price">₱1,300</p>
+        <a href="page/shopnow.html" class="cta-btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOYS SECTION -->
+  <section class="toys" id="toys">
+    <h2 class="section-title">Popular Toys</h2>
+    <p class="section-subtitle">Kids love these best-selling toys!</p>
+
+    <div class="toy-grid">
+      <div class="toy-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="img/cars.jpg" alt="Toy Car">
+        <h3>Racing Car</h3>
+
+      </div>
+      <div class="toy-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="img/b.jpg" alt="Blocks">
+        <h3>Building Blocks</h3>
+
+      </div>
+      <div class="toy-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="img/op.jpg" alt="Optimus Prime">
+        <h3>Optimus Prime</h3>
+
+      </div>
+      <div class="toy-card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="img/bum.avif" alt="Bumblebee">
+        <h3>Bumblebee Transformer</h3>
+
+      </div>
+      <div class="toy-card" data-aos="zoom-in" data-aos-delay="500">
+        <img src="img/me.avif" alt="Megatron">
+        <h3>Megatron Figure</h3>
+
+      </div>
+      <div class="toy-card" data-aos="zoom-in" data-aos-delay="600">
+        <img src="img/iron.jpg" alt="Ironhide">
+        <h3>Ironhide Battle Robot</h3>
+
+      </div>
+      <div class="toy-card" data-aos="zoom-in" data-aos-delay="700">
+        <img src="img/star.jpg" alt="Starscream">
+        <h3>Starscream Flyer</h3>
+
+      </div>
+      <div class="toy-card" data-aos="zoom-in" data-aos-delay="800">
+        <img src="img/re.jpg" alt="Ratchet">
+        <h3>Ratchet Rescue Transformer</h3>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">We’d love to hear from you</p>
+
+    <div class="contact-container">
+      <div class="contact-info" data-aos="fade-right">
+        <h3>Get in Touch</h3>
+        <p>Have questions about our toys, orders, or deals? Send us a message and our team will get back to you shortly.
+        </p>
+        <ul>
+          <li>Philippines</li>
+          <li>support@toyshop.com</li>
+          <li>+63 900 123 4567</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" data-aos="fade-left">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>ToyShop</h3>
+        <p>Your trusted online toy store bringing fun, imagination, and joy to kids and collectors.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#toys">Toys</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li>Philippines</li>
+          <li>support@toyshop.com</li>
+          <li>+63 900 123 4567</li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="img/f.png" alt="Facebook"></a>
+          <a href="#"><img src="img/ins.png" alt="Instagram"></a>
+          <a href="#"><img src="img/tw.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 ToyShop. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+      mirror: true
+    });
+  </script>
+
+</body>
+
+</html>

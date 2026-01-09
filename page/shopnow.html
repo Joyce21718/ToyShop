@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToyShop Online</title>
+  <link rel="stylesheet" href="../css/buynow.css">
+   <link rel="stylesheet" href="../css/shopmodal.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">ToyShop</div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="active">Home</a></li>
+      <li><a href="../index.html">Categories</a></li>
+      <li><a href="../index.html">Toys</a></li>
+      <li><a href="../index.html">Deals</a></li>
+      <li><a href="../index.html">About</a></li>
+      <li><a href="../index.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li class="desktop-search">
+        <form class="search-form">
+          <input type="text" placeholder="Search toys..." />
+          <button class="cta-btn">Search</button>
+        </form>
+      </li>
+    </ul>
+  </nav>
+  <section class="shop-header">
+    <h2>ToyShop Online</h2>
+    <p>Filter by category or find discounted toys!</p>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="transformer">Transformers</button>
+      <button class="filter-btn" data-filter="dolls">Dolls</button>
+      <a href="cars.html" class="filter-btn">Cars</a>
+      <a href="blocks.html" class="filter-btn">Blocks</a>
+      <a href="dinosaurs.html" class="filter-btn">Dinosaurs</a>
+      <a href="#action-figures" class="filter-btn">Action Figures</a>
+      <a href="#stuffed-animals" class="filter-btn">Stuffed Animals</a>
+    </div>
+  </section>
+
+  <section id="transformers" class="category-section toy-grid">
+    <div class="toy-card" data-category="transformer" data-aos="zoom-in">
+      <div class="discount">-20%</div>
+      <img src="../img/op.jpg" alt="Optimus Prime">
+      <h3>Optimus Prime</h3>
+      <p class="price">₱1,200</p>
+      <button>Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+    </div>
+    <div class="toy-card" data-category="transformer" data-aos="zoom-in">
+      <img src="../img/bum.avif" alt="Bumblebee">
+      <h3>Bumblebee</h3>
+      <p class="price">₱999</p>
+      <button>Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+    </div>
+    <div class="toy-card" data-category="transformer" data-aos="zoom-in">
+      <div class="discount">-15%</div>
+      <img src="../img/me.avif" alt="Megatron">
+      <h3>Megatron</h3>
+      <p class="price">₱1,400</p>
+      <button>Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+    </div>
+    <div class="toy-card" data-category="transformer" data-aos="zoom-in">
+      <img src="../img/star.jpg" alt="Starscream">
+      <h3>Starscream</h3>
+      <p class="price">₱1,100</p>
+      <button>Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+    </div>
+    <div class="toy-card" data-category="transformer" data-aos="zoom-in">
+      <div class="discount">-10%</div>
+      <img src="../img/Grimlock.jpg" alt="Grimlock">
+      <h3>Grimlock</h3>
+      <p class="price">₱1,350</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+  </section>
+
+  <section id="dolls" class="category-section toy-grid">
+    <div class="toy-card" data-category="dolls" data-aos="zoom-in">
+      <div class="discount">-15%</div>
+      <img src="../img/Princess Doll.jpg" alt="Princess Doll">
+      <h3>Princess Doll</h3>
+      <p class="price">₱699</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="dolls" data-aos="zoom-in">
+      <img src="../img/Barbie Doll.jpg" alt="Barbie Doll">
+      <h3>Barbie Doll</h3>
+      <p class="price">₱899</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="dolls" data-aos="zoom-in">
+      <img src="../img/Baby Doll.jpg" alt="Baby Doll">
+      <h3>Baby Doll</h3>
+      <p class="price">₱799</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="dolls" data-aos="zoom-in">
+      <img src="../img/Fashion Doll.jpg" alt="Fashion Doll">
+      <h3>Fashion Doll</h3>
+      <p class="price">₱950</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="dolls" data-aos="zoom-in">
+      <div class="discount">-10%</div>
+      <img src="../img/Princess Doll 2.jpg" alt="Princess Doll 2">
+      <h3>Princess Doll 2</h3>
+      <p class="price">₱880</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+  </section>
+
+  <section id="cars" class="category-section toy-grid">
+    <div class="toy-card" data-category="cars" data-aos="zoom-in">
+      <div class="discount">-10%</div>
+      <img src="../img/cars.jpg" alt="Racing Car">
+      <h3>Racing Car</h3>
+      <p class="price">₱499</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="cars" data-aos="zoom-in">
+      <img src="../img/Sports Car.jpg" alt="Sports Car">
+      <h3>Sports Car</h3>
+      <p class="price">₱599</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="cars" data-aos="zoom-in">
+      <img src="../img/Fire Truck.jpg" alt="Fire Truck">
+      <h3>Fire Truck</h3>
+      <p class="price">₱650</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="cars" data-aos="zoom-in">
+      <div class="discount">-5%</div>
+      <img src="../img/Police Car.jpg" alt="Police Car">
+      <h3>Police Car</h3>
+      <p class="price">₱550</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="cars" data-aos="zoom-in">
+      <img src="../img/Taxi Car.jpg" alt="Taxi Car">
+      <h3>Taxi Car</h3>
+      <p class="price">₱480</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+  </section>
+
+  <section id="blocks" class="category-section toy-grid">
+    <div class="toy-card" data-category="blocks" data-aos="zoom-in">
+      <img src="../img/b.jpg" alt="Building Blocks">
+      <h3>Building Blocks</h3>
+      <p class="price">₱899</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="blocks" data-aos="zoom-in">
+      <div class="discount">-20%</div>
+      <img src="../img/Lego Set.jpg" alt="Lego Set">
+      <h3>Lego Set</h3>
+      <p class="price">₱1,200</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="blocks" data-aos="zoom-in">
+      <img src="../img/Wooden Blocks.jpg" alt="Wooden Blocks">
+      <h3>Wooden Blocks</h3>
+      <p class="price">₱870</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="blocks" data-aos="zoom-in">
+      <div class="discount">-10%</div>
+      <img src="../img/Color Blocks.jpg" alt="Color Blocks">
+      <h3>Color Blocks</h3>
+      <p class="price">₱890</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+    <div class="toy-card" data-category="blocks" data-aos="zoom-in">
+      <img src="../img/Puzzle Blocks.jpg" alt="Puzzle Blocks">
+      <h3>Puzzle Blocks</h3>
+      <p class="price">₱920</p>
+      <button class="buy-btn">Buy Now</button>
+      <button class="add-cart-btn">Add to Cart</button>
+
+    </div>
+  </section>
+  <div id="buyModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <!-- LEFT: Registration Form -->
+      <div class="modal-left">
+        <div id="registerSection">
+          <h2>Register First</h2>
+
+          <form id="registerForm">
+            <label>Full Name:</label>
+            <input type="text" id="regName" name="regName" placeholder="Your Name" required>
+
+            <label>Email Address:</label>
+            <input type="email" id="regEmail" name="regEmail" placeholder="example@email.com" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" id="regPhone" name="regPhone" placeholder="09XXXXXXXXX" required>
+
+            <label>Address:</label>
+            <input type="text" id="regAddress" name="regAddress" placeholder="Your Address" required>
+
+            <label>Password:</label>
+            <input type="password" id="regPassword" name="regPassword" placeholder="Enter password" required>
+
+            <label>Confirm Password:</label>
+            <input type="password" id="regConfirmPassword" name="regConfirmPassword" placeholder="Confirm password"
+              required>
+
+            <button type="submit" class="submit-btn">Register</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- RIGHT: Toy Image -->
+      <div class="modal-right">
+        <img id="modalToyImage" src="../img/Puzzle Blocks.jpg" alt="Toy Image">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>ToyShop</h3>
+        <p>Your trusted online toy store bringing fun, imagination, and joy to kids and collectors.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#toys">Toys</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li>Philippines</li>
+          <li>support@toyshop.com</li>
+          <li>+63 900 123 4567</li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="../img/f.png" alt="Facebook"></a>
+          <a href="#"><img src="../img/ins.png" alt="Instagram"></a>
+          <a href="#"><img src="../img/tw.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 ToyShop. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, easing: "ease-in-out", once: false, mirror: true });
+
+  </script>
+  <script src="../js/script.js"></script>
+
+</body>
+
+</html>

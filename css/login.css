@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-page {
+  display: flex;
+  width: 90%;
+  max-width: 800px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(255, 165, 0, 0.5);
+}
+
+.login-left {
+  flex: 1;
+  position: relative;
+  background: #222;
+}
+
+.login-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.login-right {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(to bottom, #1a1a1a, #111);
+}
+
+.login-right h2 {
+  color: #ffa500;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.login-right label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.login-right input[type="email"],
+.login-right input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  outline: none;
+  background: #333;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.login-right input::placeholder {
+  color: #bbb;
+}
+
+.login-actions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.login-actions input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ffa500;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-sizing: border-box;
+}
+
+.login-btn:hover {
+  background: #ff8c00;
+  transform: scale(1.02);
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.signup-text a {
+  color: #ffa500;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+  .login-left {
+    height: 200px;
+  }
+}

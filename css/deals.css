@@ -1,0 +1,86 @@
+
+.deals {
+  padding: 80px 20px;
+  background-color: #111;
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.deals .section-title {
+  font-size: 3rem;
+  color: white; 
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(245, 243, 244, 0.5);
+}
+
+.deals .section-subtitle {
+  color: #ccc;
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.deal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.deal-card {
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 25px;
+  border: 2px solid #333;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease, border-color 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.deal-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(255,111,0,0.5);
+  background: #222;
+  border-color: #ff6f00;
+}
+
+.deal-card h3 {
+  font-size: 1.3rem;
+  color: #ff6f00; 
+  margin-bottom: 10px;
+}
+
+.original-price {
+  color: #999;
+  font-size: 1rem;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+
+.deal-price {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.deal-card .cta-btn {
+  background: #ff6f00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.deal-card .cta-btn:hover {
+  background: #ff8f33;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255,111,0,0.5);
+}

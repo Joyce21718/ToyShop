@@ -1,0 +1,75 @@
+.categories {
+    padding: 80px 20px;
+    background-color: #111;
+    text-align: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.categories .section-title {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(245, 243, 244, 0.5);
+}
+
+.categories .section-subtitle {
+    color: #ccc;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.category-card {
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 30px 20px;
+    border: 2px solid #333;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+    overflow: hidden;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 111, 0, 0.5);
+    border-color: #ff6f00;
+    background: #222;
+}
+
+.category-card h3 {
+    font-size: 1.5rem;
+    color: #ff6f00;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.category-card .cta-btn {
+    background: #ff6f00;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.category-card .cta-btn:hover {
+    background: #ff8f33;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 111, 0, 0.5);
+}

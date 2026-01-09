@@ -1,0 +1,101 @@
+.toys {
+    padding: 80px 20px;
+    background-color: #0f0f0f;
+    text-align: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(245, 243, 244, 0.5);
+}
+
+.section-subtitle {
+    color: #ccc;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.toy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.toy-card {
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.toy-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 111, 0, 0.15), transparent 70%);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+.toy-card:hover::before {
+    transform: rotate(0deg);
+}
+
+.toy-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(255, 111, 0, 0.5);
+    background: #222;
+}
+
+.toy-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.toy-card:hover img {
+    transform: scale(1.05);
+}
+
+.toy-card h3 {
+    font-size: 1.3rem;
+    color: #ff6f00;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.cta-btn {
+    background: #ff6f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #ff8f33;
+    transform: scale(1.05);
+}
