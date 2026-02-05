@@ -1,0 +1,22 @@
+name: Deploy Plain PHP Site
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Deploy to server
+      uses: easingthemes/ssh-deploy@main
+      with:
+        ssh-private-key: ${{ secrets.SSH_KEY }}
+        remote-user: your_server_user
+        server-ip: your_server_ip
+        remote-path: /var/www/html/ToyShop
+        local-path: .
