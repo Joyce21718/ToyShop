@@ -1,4 +1,4 @@
-name: Deploy Plain PHP Site
+name: Deploy ToyShop PHP Site
 
 on:
   push:
@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Deploy to server
-      uses: easingthemes/ssh-deploy@main
-      with:
-        ssh-private-key: ${{ secrets.SSH_KEY }}
-        remote-user: your_server_user
-        server-ip: your_server_ip
-        remote-path: /var/www/html/ToyShop
-        local-path: .
+      - name: Deploy to server
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+          REMOTE_USER: ubuntu
+          REMOTE_HOST: 138.197.123.45
+          SOURCE: .
+          TARGET: /var/www/html/ToyShop
